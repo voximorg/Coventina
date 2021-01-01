@@ -14,11 +14,11 @@
 
 #include "../../read.h"
 
-#include "Player.hpp"
-#include "Floor.hpp"
-#include "Cube.hpp"
-#include "CubeMesh.hpp"
-#include "Ring.hpp"
+#include "../../Player.hpp"
+#include "../../Floor.hpp"
+#include "../../Cube.hpp"
+#include "../../CubeMesh.hpp"
+#include "../../Ring.hpp"
 #if USE_ANTBAR == 1
 #include "AntTweakBar.h"
 #endif
@@ -37,7 +37,7 @@ GameScreen* GameScreen::instance = new GameScreen();
 
 
 InputEvent* GameScreen::inputEvent;
-Thumbstick* GameScreen::thumbstick = nullptr;
+Thumbstick* GameScreen::thumbstick = new Thumbstick();
 unsigned GameScreen::level = 1;
 
 GameScreen::GameScreen(){
@@ -134,6 +134,7 @@ void GameScreen::genGraphics(){
     game::Ring::genGraphics();
     CuttleFish::genGraphics();
     Thing::genGraphics();
+    thumbstick->genGraphics();
 
     cubeMesh.readMap("maze.grid");
     //cubeMesh.readCubes("map.in");

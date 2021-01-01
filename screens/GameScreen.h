@@ -9,9 +9,9 @@
 
 #include "../opengl/opengl.h"
 
-#include "audio.h"
+#include "../audio.h"
 
-#include "CuttleFish.h"
+#include "../CuttleFish.h"
 
 #include <SDL_image.h>
 
@@ -19,8 +19,8 @@
 
 #include "../MachineGun.h"
 
-#include "ui/InputEvent.h"
-#include "ui/Thumbstick.h"
+#include "../ui/InputEvent.h"
+#include "../ui/Thumbstick.h"
 
 
 struct GameScreen : public Screen {

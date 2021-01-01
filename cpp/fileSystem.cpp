@@ -43,8 +43,9 @@ std::string fileSystem::getAssetsPath()
   std::string home = getenv("PWD");
   path = home + "/assets/";
 #else
-  std::string home = getenv("HOME");
-  path = home + "/Desktop/Programming/c++/android/SDL2-2.0.3/android-project/assets/";
+  //std::string home = getenv("HOME");
+  //path = home + "/Desktop/Programming/c++/android/SDL2-2.0.3/android-project/assets/";
+  path = "./assets/";
 #endif
 #endif
   return path;

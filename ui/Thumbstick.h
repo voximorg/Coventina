@@ -1,9 +1,9 @@
-#include "shapes.h"
+#include "../shapes.h"
 #ifndef _THUMBSTICK_H
 #define _THUMBSTICK_H
 
-#include "opengl/opengl.h"
-#include "ui/InputEvent.h"
+#include "../opengl/opengl.h"
+#include "InputEvent.h"
 
 struct Thumbstick {
 
