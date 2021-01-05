@@ -114,6 +114,8 @@ void GameScreen::genGraphics(){
 
     initUI();
 
+    //thumbstick = nullptr;
+
     if (thumbstick)
         thumbstick->genGraphics();
 
@@ -275,8 +277,8 @@ void GameScreen::keyInput()
         }
     }
 
-    if (thumbstick)
-        thumbstick->keyInput(event,inputEvent);
+    //if (thumbstick)
+    //    thumbstick->keyInput(event,inputEvent);
 }
 
 void GameScreen::render(float dt)
@@ -353,8 +355,8 @@ void GameScreen::render(float dt)
 
     mat::clearMatrices();
 
-    if (thumbstick)
-        thumbstick->draw();
+    //if (thumbstick)
+    //    thumbstick->draw();
 
 
 #if USE_ANTBAR == 1
